@@ -1,22 +1,11 @@
-# 🐾 Test Automation Script for Pet Store API
-
-[![Pet-Store-Test](https://img.shields.io/badge/Pet%20Store-Test%20Automation-blue)](https://shields.io/)
-[![API-Test](https://img.shields.io/badge/API%20Automation%20Test-008080)](https://shields.io/)
-[![Cucumber](https://img.shields.io/badge/Cucumber%20Framework-33cc33)](https://shields.io/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007acc)](https://shields.io/)
-[![HTML](https://img.shields.io/badge/HTML%20Reports-FF69B4)](https://shields.io/)
-[![Makefile](https://img.shields.io/badge/Makefile-Automation-informational)](https://shields.io/)
-[![Dockerized](https://img.shields.io/badge/Dockerized%20Testing-0db7ed)](https://shields.io/)
-
----
-
-## ✨ Description
+# Test Automation Script for Pet Store API
+##  Description
 
 This repository provides a backend test automation framework tailored for a **Pet Store API**. Built with **Cucumber**, **TypeScript**, and integrated with **HTML Reporting**, this framework supports seamless test execution both locally and within Docker containers. It emphasizes scalability, environment configuration, and ease of execution across different systems.
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 
 - **Cucumber with TypeScript**: Follows BDD practices using Cucumber with TypeScript, ensuring clarity in test scenarios and maintainable test logic.
 - **Makefile Automation**: Simplifies execution commands into make targets for clean, repeatable workflows.
@@ -27,7 +16,7 @@ This repository provides a backend test automation framework tailored for a **Pe
 
 ---
 
-## 🚀 Prerequisites
+##  Prerequisites
 
 Ensure the following tools are installed:
 
@@ -36,29 +25,29 @@ Ensure the following tools are installed:
 - [Node.js & npm](https://nodejs.org/) *(Optional if running inside Docker)*
 
 ---
-## 🛠️ Installation & Execution
+##  Installation & Execution
 
 Follow these steps to set up and run the tests:
 
-### 1. 📥 Clone the Repository
+### 1.  Clone the Repository
 ```sh
 git clone <your-pet-store-api-repo-url>
 cd pet
 ```
-### 2. 📁 Setup Environment File
+### 2.  Setup Environment File
 Create a `.env.local` file with appropriate configurations:
 ```sh
 .env.local → contains valid API/test URLs
 ```
 
-### 3. 📦 Install Dependencies
+### 3.  Install Dependencies
 ```sh
 make install
 ```
 
-### 4. 📦 Run Tests (Local Machine execution)
+### 4.  Run Tests (Local Machine execution)
 
-🧪 Run on Local
+ Run on Local
 ```sh
 make test-local
 ```
@@ -73,15 +62,15 @@ It’s highly recommended to run the tests inside Docker containers for consiste
 
 🔧 Make sure the Docker daemon is running before executing any Docker-related commands. Without it, containers won’t be able to build or run.
 
-▶️ Run in Docker (Local)
+ Run in Docker (Local)
 ```sh
 make pet-test-local REPORT_PORT=8081
 ```
 ❗❗As mentioned, the local environment will result in failed tests unless properly configured.
 
-### 6. 📊 View the HTML Report
+### 6.  View the HTML Report
 Once tests are executed, open the report in your browser:
 
 http://127.0.0.1:8080/report.html
 
-#### 🐞 When the date of birth field is left empty (""), the system amusingly defaults to the current date—essentially creating an account for a newborn with instant banking access. A dedicated test case has been added for this scenario, and the failure can be reviewed in the generated test report.
+####  When the date of birth field is left empty (""), the system amusingly defaults to the current date—essentially creating an account for a newborn with instant banking access. A dedicated test case has been added for this scenario, and the failure can be reviewed in the generated test report.
