@@ -71,6 +71,6 @@ make pet-test-local REPORT_PORT=8081
 ### 6.  View the HTML Report
 Once tests are executed, open the report in your browser:
 
-http://127.0.0.1:8080/report.html
+http://127.0.0.1:8081/report.html
 
 ####  When the date of birth field is left empty (""), the system amusingly defaults to the current date—essentially creating an account for a newborn with instant banking access. A dedicated test case has been added for this scenario, and the failure can be reviewed in the generated test report.
