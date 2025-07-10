@@ -15,8 +15,8 @@ RUN npm install -g dotenv-cli http-server
 COPY . .
 COPY start.sh .
 
-# Expose port 8080 
-EXPOSE 8080
+# Expose port 8081 
+EXPOSE 8081
 
 # Run tests
 ENTRYPOINT ["./start.sh"]
