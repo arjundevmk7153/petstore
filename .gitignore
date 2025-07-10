@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Reports (keep report.html for reference)
+reports/
+!reports/report.html
+
+# Allure results
+allure-results/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# VSCode settings
+.vscode/ 
